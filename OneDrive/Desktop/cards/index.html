@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> friend cards</title>
+        <style>
+            .students-card{
+                border: 1px dashed black;
+                margin: 20px 40px;
+                padding: 10px;
+                font-size: 24px;
+                box-shadow: 5px 5px 5px rgb(95, 87, 87);
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>student cards</h1>
+        <div id="students-container"></div>
+        
+
+        <script>
+            const students = [
+                "om",
+                "sanesh",
+                "ashu",
+                "krishna",
+                "ram",
+                "lakhan",
+                "abhi",
+            ];
+
+            const studentsContainer = document.getElementById("students-container");
+
+            for (let i = 0; i < students.length; i++) {
+
+                studentsContainer.innerHTML += `<div class='students-card'>${students[i]}</div>`;
+            }
+
+        </script>
+    </body>
+</html>
